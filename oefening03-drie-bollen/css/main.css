@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  width: 600px;
+  border: 1px solid #000;
+}
+
+.grid-container > div {
+  margin: 30px;
+}
+
+.grid-container p {
+  color: grey;
+  font-family: cursive;
+  text-align: center;
+}
+
+.box {
+  width: 40px;
+  height: 40px;
+  margin: 40px auto;
+  /* vierkant omvormen naar een bol */
+  border-radius: 50%;
+}
+
+/* Als er gehoverd wordt over de grid-container
+dan vergroten we .box */
+.grid-container:hover .box {
+  transform: scale(2);
+}
+
+.box1 {
+  background: rgb(60, 158, 148, 40%);
+  /* De transitie naar scale(2) */
+  transition-duration: 300ms;
+}
+
+.box2 {
+  background: rgb(60, 158, 148, 70%);
+  /* De transitie naar scale(2) */
+  transition-duration: 1000ms;
+  transition-delay: 300ms;
+}
+
+.box3 {
+  background: rgb(60, 158, 148);
+  /* De transitie naar scale(2) */
+  transition-duration: 2000ms;
+  transition-delay: 1300ms;
+}
