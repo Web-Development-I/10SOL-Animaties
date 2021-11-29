@@ -17,8 +17,8 @@
   color: #222;
   display: block;
   padding: 10px 7px;
-  text-decoration: underline;
   cursor: default;
+  text-decoration: underline;
 }
 
 /* hyperlinks in submenu */
@@ -61,8 +61,8 @@ de kleuren van het item wijzigen */
   position: absolute; /* submenu uit de 'normal flow' halen */
 }
 
+/* submenu verbergen */
 .dropdown-menu ul {
-  /* submenu verbergen */
   max-height: 0px;
   overflow: hidden;
   /* transitie achterwaarts */
