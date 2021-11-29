@@ -17,6 +17,8 @@
   color: #222;
   display: block;
   padding: 10px 7px;
+  text-decoration: underline;
+  cursor: default;
 }
 
 /* hyperlinks in submenu */
@@ -27,27 +29,11 @@
   text-decoration: none;
 }
 
-/* lay-out dropdown-menu */
-.dropdown-menu {
-  display: flex;
-}
-.dropdown-menu ul {
-  position: absolute; /* submenu uit de 'normal flow' halen */
-}
-
-/* grijze achtergrondkleur toevoegen bij het hoveren over een hoofdmenu-item */
-.dropdown-menu > li:hover {
-  background-color: #ddd;
-}
-/* onderstreping verwijderen bij het hoveren over een hoofdmenu-item */
-.dropdown-menu > li:hover > a {
-  text-decoration: none;
-}
-
-/* extra witruimte links van de hyperlinks in het hoofdmenu,
-behalve bij het eerste item */
-.dropdown-menu > li + li {
-  margin-left: 20px;
+/* bij het hoveren over een submenu-item
+de kleuren van het item wijzigen */
+.dropdown-menu ul li:hover a {
+  background-color: #006fb8;
+  color: white;
 }
 
 /* Het submenu van randen voorzien:         
@@ -67,6 +53,14 @@ behalve bij het eerste item */
   margin: 1px;
 }
 
+/* lay-out dropdown-menu */
+.dropdown-menu {
+  display: flex;
+}
+.dropdown-menu ul {
+  position: absolute; /* submenu uit de 'normal flow' halen */
+}
+
 .dropdown-menu ul {
   /* submenu verbergen */
   max-height: 0px;
@@ -83,9 +77,17 @@ behalve bij het eerste item */
   max-height: 200px;
 }
 
-/* bij het hoveren over een submenu-item
-de kleuren van het item wijzigen */
-.dropdown-menu ul li:hover a {
-  background-color: #006fb8;
-  color: white;
+/* grijze achtergrondkleur toevoegen en onderstreping verwijderen
+bij het hoveren over een hoofdmenu-item. */
+.dropdown-menu > li:hover {
+  background-color: #ddd;
+  text-decoration: none;
 }
+
+/* extra witruimte links van de hyperlinks in het hoofdmenu,
+behalve bij het eerste item */
+.dropdown-menu > li + li {
+  margin-left: 20px;
+}
+
+  
