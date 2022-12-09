@@ -79,7 +79,7 @@ de kleuren van het item wijzigen */
 
 /* grijze achtergrondkleur toevoegen en onderstreping verwijderen
 bij het hoveren over een hoofdmenu-item. */
-.dropdown-menu > li:hover {
+.dropdown-menu > li:hover > a {
   background-color: #ddd;
   text-decoration: none;
 }
