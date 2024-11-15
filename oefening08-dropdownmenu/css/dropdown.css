@@ -55,7 +55,7 @@ de kleuren van het item wijzigen */
 
 /* lay-out dropdown-menu */
 .dropdown-menu {
-  display: flex;
+  display: block flex;
 }
 .dropdown-menu ul {
   position: absolute; /* submenu uit de 'normal flow' halen */
